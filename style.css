@@ -1,0 +1,205 @@
+/*Google font link*/
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@200;300;400;500;600;700;800;900&display=swap'); 
+
+/*Bootstrap icon link*/
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css");
+
+
+/*Universal css*/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+/*Common css*/
+body{
+    font-family: 'Work Sans', sans-serif;
+}
+
+
+/*Navbar css*/
+.nav{
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px 100px;
+    box-shadow: 0 2px 10px #F5F5F5;
+}
+
+.nav .left{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.nav .left .logo{
+    text-decoration: none;
+    font-size: 45px;
+    font-weight: 700;
+    color: #0B0223;
+}
+
+.nav .left .logo span{
+    color: #FF52A2;
+}
+
+.nav .right{
+    display: flex;
+    align-items: center;
+}
+
+.nav .right .nav-menu{
+    display: flex;
+    align-items: center;
+}
+
+.nav .right .nav-menu .menu-item{
+    list-style: none;
+    padding: 0 15px;
+}
+
+.nav .right .nav-menu .menu-item .menu-link{
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    color: #0B0223;
+}
+
+.nav .right .follow{
+    display: flex;
+    align-items: center;
+    background-color: #EEEEEE;
+    margin-left: 15px;
+    padding: 12px 10px;
+    border-radius: 5px;
+}
+
+.nav .right .follow .follow-item{
+    list-style: none;
+    padding: 0 8px;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.nav .right .follow .follow-item .follow-link img{
+    width: 100%;
+    height: 25px;
+}
+
+
+/*Banner css*/
+.banner{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 100px;
+    background-image: url('./images/Group-14.png');
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.banner .banner-content .banner-title{
+    text-transform: uppercase;
+    color: #0B0223;
+    font-size: 48px;
+    font-weight: 600;
+}
+
+.banner .banner-content .banner-title span{
+    font-size: 65px;
+    font-weight: 800;
+    color: #FF52A2;
+}
+
+.banner .banner-content .banner-text{
+    margin-top: 10px;
+}
+
+.banner .banner-content .banner-text .text{
+    padding: 8px 0;
+    font-size: 20px;
+    font-weight: 500;
+    color: #534C64;
+}
+
+.banner .banner-content .banner-text .text i{
+    color: #FF52A2;
+    padding-right: 5px;
+}
+
+.banner .banner-btns{
+    margin-top: 10px;
+}
+
+.banner .banner-btns button.btn-primary{
+    background-color: #FF52A2;
+    color: #fff;
+    padding: 15px 32px;
+    border: none;
+    border-radius: 50px;
+    margin-right: 10px;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.banner .banner-btns button.btn-secondary{
+    background-color: #4EC5F7;
+    color: #fff;
+    padding: 15px 32px;
+    border: none;
+    border-radius: 50px;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.banner .banner-img img{
+    width: 100%;
+    height: 480px;
+}
+
+/*Responsive mobile css*/
+@media screen and (max-width:425px){
+    .nav{
+        flex-direction: column;
+        box-shadow: none;
+    }
+
+    .nav .right{
+        flex-direction: column;
+    }
+
+    .nav .right .nav-menu{
+        margin-top: 15px;
+        flex-direction: column;
+    }
+
+    .nav .right .nav-menu .menu-item{
+        padding: 15px 0;
+    }
+
+    .nav .right .nav-menu .menu-item .menu-link{
+        font-size: 16px;
+    }
+
+    .nav .right .follow {
+        margin-left: 0;
+        margin-top: 15px;
+    }
+
+    .nav .right .follow .follow-item{
+        font-size: 16px;
+    }
+
+    .banner{
+        flex-direction: column-reverse;
+    }
+
+}
