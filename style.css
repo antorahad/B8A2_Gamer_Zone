@@ -200,6 +200,40 @@ body{
 
     .banner{
         flex-direction: column-reverse;
+        background-image: none;
+        padding: 20px 10px;
     }
 
+    .banner .banner-content{
+        padding: 50px;
+        width: 100%;
+        background-image: url('./images/Group-14.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: right;
+    }
+
+    .banner .banner-content .banner-title{
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .banner .banner-content .banner-title span{
+        text-align: center;
+        font-size: 50px;
+    }
+
+    .banner .banner-content .banner-text .text{
+        font-size: 16px;
+    }
+
+    .banner .banner-img{
+        margin: 30px 0;
+        padding: 10px;
+    }
+
+    .banner .banner-img img{
+        width: 100%;
+        height: auto;
+    }
 }
