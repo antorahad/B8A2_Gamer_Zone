@@ -275,30 +275,6 @@ body {
     height: 400px;
 }
 
-.games .games-container .games-item .inner {
-    position: relative;
-}
-
-.games .games-container .games-item .inner .icon {
-    position: absolute;
-    left: 30%;
-    top: 50%;
-    text-align: center;
-    background-color: #0B0223;
-}
-
-.games .games-container .games-item .inner .icon i {
-    color: #fff;
-    font-size: 25px;
-    margin-bottom: 15px;
-}
-
-.games .games-container .games-item .inner .icon .play {
-    color: #FF52A2;
-    font-size: 16px;
-    font-weight: 700;
-}
-
 .games .games-container .games-item img {
     width: 100%;
     height: auto;
@@ -682,5 +658,6 @@ body {
     .footer .footer-container .more-link {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
+        text-align: center;
     }
 }
