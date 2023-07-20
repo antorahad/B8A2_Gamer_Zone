@@ -413,9 +413,99 @@ body {
 
 .category-section .category .category-item .category-btn span {
     font-size: 10px;
+    font-weight: 700;
+}
+
+/*Footer css*/
+.footer{
+    background-color: #0B0223;
+    margin-top: 70px;
+}
+
+.footer .footer-container{
+    padding: 40px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer .footer-container .logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 30px 0;
+}
+
+.footer .footer-container .logo p{
+    color: #fff;
+    font-size: 45px;
     font-weight: 600;
 }
 
+.footer .footer-container .logo p span{
+    color: #FF52A2;
+}
+
+
+.footer .footer-container .footer-link{
+    display: flex;
+    align-items: center;
+}
+
+.footer .footer-container .footer-link .link-item{
+    list-style: none;
+    padding: 20px 15px;
+}
+
+.footer .footer-container .footer-link .link-item a{
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    color: #fff;
+}
+
+.footer .footer-container .social{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer .footer-container .social .social-item{
+    list-style: none;
+    padding: 20px 15px;
+}
+
+.footer .footer-container .social .social-item a i{
+    font-size: 25px;
+    color: #fff;
+}
+
+.footer .footer-container .more-link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer .footer-container .more-link .more-item{
+    list-style: none;
+    padding: 20px 15px;
+}
+
+.footer .footer-container .more-link .more-item a{
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    color: #fff;
+}
+
+.footer .footer-container .copyright p{
+    color: #fff;
+    font-size: 12px;
+    font-weight: 300;
+    padding: 20px 0 30px;
+}
 /*Responsive mobile css*/
 @media screen and (min-width:476px) and (max-width:576px) {
     .nav {
@@ -577,5 +667,20 @@ body {
 
     .category-section .category .category-item .category-btn {
         gap: 4px;
+    }
+
+    .footer .footer-container .footer-link {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .footer .footer-container .social {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .footer .footer-container .more-link {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
     }
 }
